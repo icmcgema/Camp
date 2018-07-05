@@ -15,6 +15,8 @@ int v[N], f[N][2], n;
 	Pegue todos os elementos positivos, e se a soma for par, a melhor subsequencia eh a gerada 
 	tirando-se um elemento impar positivo do conjunto (o menor deles) ou adicionando um elemento 
 	impar negativo ao conjunto (o menor em valor absoluto)
+
+	Complexidade: O(n)
 */
 int solve(int p, int odd) {
 	if(p == n)
