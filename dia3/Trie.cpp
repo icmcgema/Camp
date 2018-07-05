@@ -59,6 +59,7 @@ int count(int at, int i) {
 }
 
 int main() {
+    ios_base::sync_with_stdio(false);
     memset(nxt, -1, sizeof nxt);
 
     int n;  cin >> n;
