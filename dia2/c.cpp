@@ -1,14 +1,11 @@
 #include <bits/stdc++.h>
 
-#define pb push_back
 #define fi first
 #define se second
-#define mp make_pair
 
-const int N = 200007, inf = 0x3f3f3f3f;
+const int N = 200007;
 
 using namespace std;
-typedef long long ll;
 typedef pair<int, int> ii;
 
 struct query {
@@ -22,6 +19,11 @@ struct query {
 int seg[4*30007];
 query queries[N];
 int ans[N];
+
+/* 
+	Segtree de soma
+	Queremos que os valores maiores do que K sejam 1, e os menores ou iguais 0
+*/
 
 void build(int p, int l, int r) {
 	if(l == r) {
